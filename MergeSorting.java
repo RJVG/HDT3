@@ -8,8 +8,18 @@ Gustavo Orellana 15073
 import java.util.*;
 
 public class MergeSorting{
-	ArrayList S = new ArrayList();
+	
+	public MergeSorting(){
+	int[] S = new int[2000];
 	Sort(S);
+	}
+	
+	public void setS(int S[]){
+		S = numeros;
+	}
+	public int[] getS(){
+		return S;
+	}
 	
 	// Ordenar
 	public Comparable[] Sort(Comparable[] Num){
@@ -18,7 +28,7 @@ public class MergeSorting{
 			System.out.println ("Lista vacía");
 		//Si lista llena seguir con ordenamiento
 		}
-		
+
 		//Separar lista original 
 		Comparable[] P = new Comparable[Num.length / 2];
 		Comparable[] E = new Comparable[Num.length - P.length];
