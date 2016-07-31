@@ -12,7 +12,7 @@ public class MergeSorting{
 	Sort(S);
 	
 	// Ordenar
-	public Revision[] Sort(Revision[] Num){
+	public Comparable[] Sort(Comparable[] Num){
 		// Si lista vacía no hacer nada
 		if (Num.length <= 1 ){
 			System.out.println ("Lista vacía");
@@ -20,8 +20,8 @@ public class MergeSorting{
 		}
 		
 		//Separar lista original 
-		Revision[] P = new Revision[Num.length / 2];
-		Revision[] E = new Revision[Num.length - P.length];
+		Comparable[] P = new Comparable[Num.length / 2];
+		Comparable[] E = new Comparable[Num.length - P.length];
 		
 		//Enviar primera y segunda parte de la lista al metodo para ordenarlo
 		Sort(E);
@@ -32,17 +32,16 @@ public class MergeSorting{
 		return S;
 	}
 	
-	public void Merge(Revision [] Primero, Revision [] Segundo, Revision [] Nuevo){
+	public void Merge(Comparable [] Primero, Comparable [] Segundo, Comparable [] Nuevo){
 	// Crear e iniciar contadores en 0
 	int A,B,C = 0;
-	// Comparar elementos de la primera y segunda lista y agregarla a una tercera
+		// Comparar elementos de la primera y segunda lista y agregarla a una tercera
 		while(A < Primero.length && B < Segundo.length){
 			// Aumentar contador para ir valor por valor de la ambas listas
 			if(Primero[A].compareTo(Segundo[B])<0){
 				Nuevo[C] = Primero[A];
 				A++;
 			}else{
-				// Ver si valor de la segunda lista entra despeus de un valor de la primera
 				Nuevo[C] = Segundo[B];
 				B++;
 			}
