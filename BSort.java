@@ -10,6 +10,20 @@
  */
 public class BSort {
     
+    int [] numeros_arr;
+    
+    public BSort(){
+        numeros_arr = new int[2000]
+    }
+    
+    public void setList(int numeros[]){
+        numeros_arr = numeros;
+    }
+    
+    public int[] getList(){
+        return numeros_arr;
+    }
+    
     public static void BSort(String[] args) {
     int x = 0;
     int[] array = new int[x];
