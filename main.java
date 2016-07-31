@@ -28,6 +28,10 @@ public class main {
     InsertionSort lista = new InsertionSort();
     lista.setList(array);
     lista.doInsertionSort();
+    
+    
+    BSort lista1 = new BSort();
+    lista.setList(array)lista1.doBSort();
 	
 	MergeSorting Fall = new MergeSorting();
 	Fall.setA(array);
