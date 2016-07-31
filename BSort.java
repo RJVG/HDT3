@@ -27,5 +27,17 @@ public class BSort {
 
         }
     }
+    //envio de la lista al ordenamiento insertion
+    //@rodrigo
+    InsertionSort lista = new InsertionSort();
+    lista.setList(array);
+    lista.doInsertionSort();
+    
+    array = lista.getList();
+        for (int i=0; i<x; i++){
+            System.out.println(array[i]);
+        }
+        }
 }
+
 }
