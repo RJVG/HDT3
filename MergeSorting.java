@@ -8,9 +8,17 @@ Gustavo Orellana 15073
 import java.util.*;
 
 public class MergeSorting{
-	ArrayList S = new ArrayList();
+	public MergeSorting(){
+	int[] S = new int[2000];
 	Sort(S);
+	}
 	
+	public void setS(int numeros[]){
+		S = numeros;
+	}
+	public int[] getS(){
+		return S;
+	}
 	// Ordenar
 	public Comparable[] Sort(Comparable[] Num){
 		// Si lista vacía no hacer nada
